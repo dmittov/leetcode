@@ -22,3 +22,7 @@ public:
         return result;
     }
 };
+
+
+int main(int argc, char** argv) {
+}
