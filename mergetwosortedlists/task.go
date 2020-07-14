@@ -1,4 +1,4 @@
-package leetcodetask
+package mergetwosortedlists
 
 type ListNode struct {
 	Val  int

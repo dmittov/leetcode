@@ -1,4 +1,4 @@
-package leetcodetask
+package guessnumberhighorlower
 
 import (
 	"testing"
@@ -8,7 +8,7 @@ type testCase struct {
 	num, max int
 }
 
-func TestGuesser(t *testing.T) {
+func TestGuessNumber(t *testing.T) {
 	for _, input := range []testCase{
 		{num: 6, max: 10},
 		{num: 6, max: 6},

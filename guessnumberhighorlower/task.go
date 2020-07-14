@@ -1,4 +1,4 @@
-package leetcodetask
+package guessnumberhighorlower
 
 /**
  * Forward declaration of guess API.
