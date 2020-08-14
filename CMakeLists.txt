@@ -6,4 +6,5 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_subdirectory (1.two-sum)
 add_subdirectory (2.add-two-numbers)
+add_subdirectory (103.zigzag-level-order-traversal)
 add_subdirectory (104.maximum-depth-of-binary-tree)
