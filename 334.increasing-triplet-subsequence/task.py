@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     @staticmethod
     def __increasing_k(nums: List[int], k: int) -> bool:
