@@ -7,14 +7,17 @@ class TreeNode:
 
 
 class Solution:
-    def __convert(self, root: TreeNode, tval: int) -> TreeNode:
-        if root is None:
-            return None, 0
-        rtree, rval = self.__convert(root.right, tval)
-        root.val += tval if rtree is None else rval
-        ltree, lval = self.__convert(root.left, root.val)
-        return root, root.val if ltree is None else lval
-
     def convertBST(self, root: TreeNode) -> TreeNode:
-        root, val = self.__convert(root, 0)
+        accu = 0
+
+        def traverse(root: TreeNode):
+            if root is None:
+                return None
+            nonlocal accu
+            traverse(root.right)
+            accu += root.val
+            root.val = accu
+            traverse(root.left)
+
+        traverse(root)
         return root
