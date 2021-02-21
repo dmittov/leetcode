@@ -1,0 +1,11 @@
+class Solution:
+    def brokenCalc(self, X: int, Y: int) -> int:
+        steps = 0
+        while Y > X:
+            if Y % 2 == 0:
+                Y = Y // 2
+            else:
+                Y += 1
+            steps += 1
+        steps += (X - Y)
+        return steps
